@@ -54,17 +54,91 @@
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu is-open">
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" type="button"></button>
-          <nav class="mobile-menu-nav">Navigation</nav>
-          <address></address>
-          <ul></ul>
+          <button class="mobile-menu-close" type="button">
+            <svg class="modal-close-svg" width="8" height="8">
+              <use
+                class="modal-close-icon"
+                href="./images/icons.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="menu-nav-list">
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="./index.html">Studio</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="nav-link" href="">Portfolio</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="menu-contacts">
+            <ul class="menu-contacts-list">
+              <li class="menu-contacts-item">
+                <a class="menu-contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="menu-contacts-item">
+                <a class="menu-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="menu-card-list">
+            <li class="menu-card-item">
+              <a class="soc" href="www.instagram.com">
+                <svg class="card-soc-icon" width="24" height="24">
+                  <use
+                    class="soc-icon"
+                    href="./images/icons.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-card-item">
+              <a class="soc" href="www.twitter.com">
+                <svg class="card-soc-icon" width="24" height="24">
+                  <use
+                    class="soc-icon"
+                    href="./images/icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="menu-card-item">
+              <a class="soc" href="www.facebook.com">
+                <svg class="card-soc-icon" width="24" height="24">
+                  <use
+                    class="soc-icon"
+                    href="./images/icons.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-card-item">
+              <a class="soc" href="www.linkedin.com">
+                <svg class="card-soc-icon" width="24" height="24">
+                  <use
+                    class="soc-icon"
+                    href="./images/icons.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
     <main>
-      <section class="hero hidden">
+      <section class="hero">
         <div class="container container-hero">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button">Order Service</button>
