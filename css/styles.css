@@ -651,9 +651,10 @@ img {
     width: 768px;
   }
   .portfolio-item {
-    /* width: calc((100% – 24px) / 2); */
+    width: calc((100% – 24px) / 2);
   }
   .portfolio-list {
+    display: flex;
     flex-direction: row;
     gap: 72px 24px;
     flex-wrap: wrap;
@@ -668,4 +669,111 @@ img {
     gap: 48px 24px;
     flex-wrap: wrap;
   }
+}
+/* ---footer--- */
+.footer-logo {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+.footer-text,
+.footer-logo-part {
+  color: #f4f4fd;
+}
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 288px;
+  align-items: center;
+  margin-bottom: 72px;
+}
+.soc-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.soc-footer {
+  align-items: baseline;
+}
+.soc-footer-list {
+  gap: 16px;
+}
+.footer-s:hover,
+.footer-s:focus {
+  background-color: #31d0aa;
+}
+.footer-subscribe {
+  margin: 0 auto;
+}
+.footer-form-btn {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+  background: #4d5ae5;
+  border: none;
+}
+.footer-btn-svg {
+  margin-left: 16px;
+  fill: #fff;
+}
+.footer-form-text {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.footer-input {
+  display: flex;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: transparent;
+  padding-left: 16px;
+}
+.footer-input::placeholder {
+  background-color: #2e2f42;
 }
