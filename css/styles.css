@@ -650,14 +650,14 @@ img {
   .portfolio {
     width: 768px;
   }
-  .portfolio-item {
-    width: calc((100% – 24px) / 2);
-  }
   .portfolio-list {
     display: flex;
     flex-direction: row;
-    gap: 72px 24px;
     flex-wrap: wrap;
+    gap: 48px 24px;
+  }
+  .portfolio-item {
+    width: calc((100% – 24px) / 2);
   }
 }
 @media screen and (min-width: 1158px) {
@@ -666,13 +666,17 @@ img {
   }
   .portfolio-list {
     display: flex;
-    gap: 48px 24px;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 48px 24px;
+  }
+  .portfolio-item {
+    width: calc((100% – 72px) / 3);
   }
 }
 /* ---footer--- */
 .footer-logo {
-  display: block;
+  display: flex;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -680,12 +684,13 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 16px;
 }
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
 }
 .footer-text,
 .footer-logo-part {
@@ -706,23 +711,29 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 16px;
 }
 .soc-footer {
-  align-items: baseline;
+  align-items: center;
 }
 .soc-footer-list {
   gap: 16px;
+  margin-bottom: 72px;
 }
 .footer-s:hover,
 .footer-s:focus {
   background-color: #31d0aa;
 }
 .footer-subscribe {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .footer-form-btn {
-  display: flex;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -745,8 +756,6 @@ img {
   fill: #fff;
 }
 .footer-form-text {
-  display: flex;
-  align-items: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -776,4 +785,44 @@ img {
 }
 .footer-input::placeholder {
   background-color: #2e2f42;
+}
+@media screen and (min-width: 768px) {
+  .container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-logo {
+    display: block;
+  }
+  .footer-input {
+    display: block;
+  }
+  .footer-subscribe {
+    display: block;
+  }
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: first baseline;
+    justify-content: flex-start;
+  }
+  .soc-text {
+    display: block;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+  }
+  .footer-subscribe {
+    margin-left: 80px;
+  }
+  .soc-footer-list {
+  }
 }
