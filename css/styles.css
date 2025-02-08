@@ -484,10 +484,10 @@ img {
 /* ---team---*/
 .team {
   padding: 96px 0;
+  background-color: #f4f4fd;
 }
 .container-team {
   margin: 0 auto;
-  background-color: #f4f4fd;
 }
 .team-list {
   display: flex;
@@ -870,6 +870,9 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
   .container-footer {
     display: flex;
     flex-wrap: nowrap;
