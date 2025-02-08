@@ -356,6 +356,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/img-bc768.jpg);
+    padding: 112px 0;
   }
   .hero-btn {
     margin: 36px auto 0;
@@ -379,6 +380,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/background.jpg);
+    padding: 188px 0;
   }
   @media screen and (min-resolution: 2x), (-webkit-divice-pixel-ratio: 2) {
     .hero {
@@ -707,6 +709,7 @@ img {
   .portfolio {
     width: 1128px;
     margin: 0 auto;
+    padding: 120px 0;
   }
   .portfolio-list {
     display: flex;
@@ -889,7 +892,7 @@ img {
 }
 /* ---modal--- */
 
-backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
