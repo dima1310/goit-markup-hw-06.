@@ -970,6 +970,7 @@ img {
   .modal {
     width: 288px;
     min-height: 623px;
+    padding: 72px 16px 24px 16px;
   }
 
   .modal-check-text {
