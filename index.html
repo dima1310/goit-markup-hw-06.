@@ -57,9 +57,9 @@
       <div class="mobile-menu">
         <div class="container mobile-menu-container">
           <button class="mobile-menu-close" type="button">
-            <svg class="modal-close-svg" width="8" height="8">
+            <svg class="mobile-close-svg" width="8" height="8">
               <use
-                class="modal-close-icon"
+                class="mobile-close-icon"
                 href="./images/icons.svg#icon-close"
               ></use>
             </svg>
@@ -80,13 +80,15 @@
           <address class="menu-contacts">
             <ul class="menu-contacts-list">
               <li class="menu-contacts-item">
-                <a class="menu-contacts-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+                <a class="menu-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
                 >
               </li>
               <li class="menu-contacts-item">
-                <a class="menu-contacts-link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
+                <a
+                  class="menu-contacts-link link-email"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
                 >
               </li>
             </ul>
@@ -749,7 +751,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop hidden">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close" type="button">
           <svg class="modal-close-svg" width="8" height="8">
@@ -836,8 +838,10 @@
                   <use href="./images/icons.svg#icon-galka"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="privasy-policy" href="">Privacy Policy</a>
+              <span>
+                I accept the terms and conditions of the
+                <a class="privasy-policy" href="">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button class="modal-button" type="submit">Send</button>

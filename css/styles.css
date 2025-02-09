@@ -188,6 +188,7 @@ img {
 }
 /*--- mobile menu ---*/
 .mobile-menu {
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
@@ -231,6 +232,12 @@ img {
   color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.menu-nav-item:first-child .menu-nav-link {
+  color: #404bbf;
+}
+.menu-contacts {
+  font-family: "Roboto", sans-serif;
+}
 .menu-contacts-list {
   display: flex;
   flex-direction: column;
@@ -241,6 +248,9 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: #434455;
+}
+.menu-contacts-item:first-child .menu-contacts-link {
   color: #4d5ae5;
 }
 .menu-card-list {
@@ -249,20 +259,32 @@ img {
   gap: 40px;
   margin-top: 48px;
 }
-.card-soc-icon {
+.menu-card-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   background-color: #4d5ae5;
+}
+.card-soc-icon {
+  width: 24px;
+  height: 24px;
+  /* border-radius: 50%; */
+  /* background-color: #4d5ae5; */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   fill: #f4f4fd;
 }
 .soc {
   width: 40px;
   height: 40px;
-  background-color: #4d5ae5;
+  /* background-color: #4d5ae5; */
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .mobile-menu-close {
   position: absolute;
   top: 24px;
@@ -280,7 +302,16 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.mobile-close-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-close:hover,
+.mobile-menu-close:focus {
+  border-radius: 100%;
+  fill: #ffffff;
+  background-color: #404bbf;
+  border: none;
+}
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -441,6 +472,9 @@ img {
     align-items: flex-start;
     justify-content: center;
   }
+  .features-item-subtitle {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -494,6 +528,7 @@ img {
 .team-list {
   display: flex;
   flex-direction: column;
+  gap: 72px;
   align-items: center;
   justify-content: center;
 }
@@ -545,8 +580,6 @@ img {
   gap: 24px;
   width: 40px;
   height: 40px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-soc-icon {
@@ -588,6 +621,11 @@ img {
   .team-item {
     width: calc((100% - 24px) / 2);
   }
+  .card-item {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .container-team {
@@ -612,7 +650,6 @@ img {
 /* ---portfolio---*/
 
 .portfolio {
-  width: 320px;
   padding: 96px 0;
 }
 .portfolio-title {
@@ -692,7 +729,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .portfolio {
-    width: 768px;
     margin: 0 auto;
   }
   .portfolio-list {
@@ -707,8 +743,7 @@ img {
 }
 @media screen and (min-width: 1158px) {
   .portfolio {
-    width: 1128px;
-    margin: 0 auto;
+    margin: auto;
     padding: 120px 0;
   }
   .portfolio-list {
@@ -930,6 +965,20 @@ img {
 }
 .backdrop:not(.is-open) {
   transform: translate(-50%, -50%) scale(1.5);
+}
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 288px;
+    min-height: 623px;
+  }
+
+  .modal-check-text {
+    display: flex;
+    align-items: center;
+  }
+  .modal-check-item {
+    flex-shrink: 0;
+  }
 }
 .modal-close {
   padding: 0;
